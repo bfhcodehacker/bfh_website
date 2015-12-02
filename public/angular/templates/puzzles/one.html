@@ -1,0 +1,39 @@
+
+<div class="calc-container">
+  <div class="calc-header">Please Enter the Code an Idiot Would Use for His Luggage</div>
+  <div class="outer-dialpad">
+    <div class="viewpad">
+      {{ number }}
+    </div>
+
+    <table class="calc-table">
+      <tr>
+        <td class="dialpad-button" ng-click="addNumber(1)">1</td>
+        <td class="dialpad-button" ng-click="addNumber(2)">2</td>
+        <td class="dialpad-button" ng-click="addNumber(3)">3</td>
+      </tr>
+      <tr>
+        <td class="dialpad-button" ng-click="addNumber(4)">4</td>
+        <td class="dialpad-button" ng-click="addNumber(5)">5</td>
+        <td class="dialpad-button" ng-click="addNumber(6)">6</td>
+      </tr>
+      <tr>
+        <td class="dialpad-button" ng-click="addNumber(7)">7</td>
+        <td class="dialpad-button" ng-click="addNumber(8)">8</td>
+        <td class="dialpad-button" ng-click="addNumber(9)">9</td>
+      </tr>
+      <tr>
+        <td class="dialpad-button"></td>
+        <td class="dialpad-button" ng-click="addNumber(0)">0</td>
+        <td class="dialpad-button"></td>
+      </tr>
+      <tr>
+        <td colspan="3" class="dialpad-button clear-button" ng-click="clear()">Clear</td>
+      </tr>
+    </table>
+  </div>
+  <div class="calc-hint">
+    <a target="_blank" href="https://www.youtube.com/watch?v=a6iW-8xPw3k">Hint</a>
+  </div>
+</div>
+
