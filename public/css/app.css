@@ -10,14 +10,41 @@ body {
   width: 100%;
 }
 
+@font-face {
+  font-family: 'AlexBrush';
+  src: url("/fonts/AlexBrush-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'belligerent';
+  src: url("/fonts/belligerent.ttf");
+}
+
+@font-face {
+  font-family: 'destroy';
+  src: url("/fonts/Destroy.ttf");
+}
+
+@font-face {
+  font-family: 'amatic';
+  src: url("/fonts/AmaticSC-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'grutchshaded';
+  src: url("/fonts/GrutchShaded.ttf");
+}
+
+@font-face {
+  font-family: 'reswysokr';
+  src: url("/fonts/Reswysokr.otf");
+}
+
 .home-container {
   height: 100%;
   width: 100%;
   background-color: #000;
   color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 @keyframes star-blink {
@@ -36,6 +63,37 @@ body {
     box-shadow: 0 0 2px 1px yellow;
   }
 
+}
+
+@keyframes fire-fly-anime {
+  0% {
+    opacity: 0;
+    box-shadow: none;
+  }
+
+  25% { 
+    transform: translateY(-20px);
+    box-shadow: 0 0 10px 5px lime;
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(20px);
+    box-shadow: 0 0 10px 5px lime;
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+    box-shadow: none;
+  }
 }
 
 @keyframes fadeIn {
@@ -65,13 +123,25 @@ body {
   box-shadow: 0 0 2px yellow;
 }
 
+.fire-fly {
+  position: absolute;
+  background-color: lime;
+  border-radius: 50%;
+  box-shadow: 0 0 2px lime;
+}
+
 .welcome {
+  font-family: "reswysokr";
+  position: absolute;
+  top: 20%;
   height: auto;
-  width: auto;
+  width: 50%;
   padding: 30px;
-  margin: auto;
-  font-size: 80px;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 100px;
   color: #fff;
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 10000 !important;
   animation: fadeIn 2s linear;

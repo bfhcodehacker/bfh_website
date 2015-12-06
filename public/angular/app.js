@@ -10,6 +10,10 @@ bfhApp.config(function($routeProvider) {
       templateUrl: '/angular/templates/about.html',
       controller:  'AboutCtrl'
     }).
+    when('/firefly', {
+      templateUrl: '/angular/templates/firefly.html',
+      controller:  'FireFlyCtrl'
+    }).
     when('/puzzles/one', {
       templateUrl: '/angular/templates/puzzles/one.html',
       controller:  'PuzzleOneCtrl'

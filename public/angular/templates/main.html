@@ -1,14 +1,13 @@
-  Welcome to my webpage
-  {{ hello }}
-  <a href="#/puzzles/one">Puzzle One</a>
-
 <div id="main-page" class="home-container">
 
-
-
   <div class="welcome" ng-show="showWelcome"> Welcome </div>
-  <div class="welcome" ng-show="showOne"> Next </div>
-  <div class="welcome" ng-show="showTwo"> Another </div>
-  <div class="welcome" ng-show="showThree"> Last </div>
+  <div class="welcome" ng-show="showOne"> There's not much here at the moment. </div>
+  <div class="welcome" ng-show="showTwo"> But, please... </div>
+  <div class="welcome" ng-show="showThree"> 
+    <div>Try a Puzzle</div>
+    <a class="btn btn-default" style="margin:auto;" href="#/puzzles/one">Click</a>
+    <div>Or Enjoy the Fireflies</div>
+    <a class="btn btn-default" href="#/firefly">Click</a>
+  </div>
 
 </div>
